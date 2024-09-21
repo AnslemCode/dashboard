@@ -17,35 +17,35 @@ const menuItems = [
   { title: "Dashboard", path: "/dashboard", icon: <MdDashboard /> },
   {
     title: "Transactions",
-    path: "/dashboard/transactions",
+    path: "/transactions",
     icon: <MdAttachMoney />,
   },
   {
     title: "Settlements",
-    path: "/dashboard/settlements",
+    path: "/settlements",
     icon: <FaMoneyCheckAlt />,
   },
-  { title: "Refunds", path: "/dashboard/refunds", icon: <FaRegMoneyBillAlt /> },
-  { title: "Payments", path: "/dashboard/payments", icon: <MdAttachMoney /> },
-  { title: "Cards", path: "/dashboard/cards", icon: <FaCreditCard /> },
-  { title: "Account", path: "/dashboard/account", icon: <AiOutlineSetting /> },
+  { title: "Refunds", path: "/refunds", icon: <FaRegMoneyBillAlt /> },
+  { title: "Payments", path: "/payments", icon: <MdAttachMoney /> },
+  { title: "Cards", path: "/cards", icon: <FaCreditCard /> },
+  { title: "Account", path: "/account", icon: <AiOutlineSetting /> },
   {
     title: "Manage Bills",
-    path: "/dashboard/manage-bills",
+    path: "/manage-bills",
     icon: <FaRegMoneyBillAlt />,
   },
-  { title: "Ojah", path: "/dashboard/ojah", icon: <MdSupervisedUserCircle /> },
+  { title: "Ojah", path: "/ojah", icon: <MdSupervisedUserCircle /> },
 ];
 
 const footerItem = [
   {
     title: "Settings",
-    path: "/dashboard/settings",
+    path: "/settings",
     icon: <FaRegMoneyBillAlt />,
   },
   {
     title: "Contact us",
-    path: "/dashboard/contact-us",
+    path: "/contact-us",
     icon: <MdSupervisedUserCircle />,
   },
 ];

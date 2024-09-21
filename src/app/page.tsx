@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { CgSpinner } from "react-icons/cg";
 
-const page = () => {
+const Page = () => {
   const router = useRouter();
   useEffect(() => {
     router.push("/dashboard");
@@ -15,4 +15,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
