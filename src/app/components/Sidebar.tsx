@@ -8,10 +8,10 @@ import {
   MdAccountCircle,
   MdAttachMoney,
   MdDashboard,
-  MdMoreVert,
   MdSupervisedUserCircle,
 } from "react-icons/md";
 import SidebarItem from "./SidebarItem";
+import { LuChevronsUpDown } from "react-icons/lu";
 
 const menuItems = [
   { title: "Dashboard", path: "/dashboard", icon: <MdDashboard /> },
@@ -54,16 +54,17 @@ const Sidebar = () => {
   return (
     <div className="flex flex-col h-screen bg-[#FAFAFA]">
       <div className="flex items-center gap-2 bg-white border border-[#E2E3E5] rounded-xl p-4">
-        <MdAccountCircle className="w-[42px] h-[42px] text-purple-500" />
-        <div className="flex-1">
-          <span className="block font-medium text-[16px] text-[#343433] overflow-hidden whitespace-nowrap text-ellipsis">
+        <MdAccountCircle
+          className="text-purple-500"
+          style={{ fontSize: "42px" }}
+        />
+        <div className="flex flex-col gap-1">
+          <span className="font-medium text-[16px] text-[#343433] overflow-hidden whitespace-nowrap text-ellipsis max-w-[140px]">
             Payshiga Technologies
           </span>
-          <span className="block text-xs text-[#99999C]">
-            Business ID: 09387465
-          </span>
+          <span className="text-xs text-[#99999C]">Business ID: 09387465</span>
         </div>
-        <MdMoreVert className="text-gray-400 text-2xl" />
+        <LuChevronsUpDown className="text-[#9d9d9d] w-[24px] h-[24px]" />
       </div>
 
       <div className="flex-grow mt-4">
@@ -72,7 +73,7 @@ const Sidebar = () => {
         ))}
       </div>
 
-      <div className="mt-auto">
+      <div className="mt-auto py-4">
         {footerItem.map((item) => (
           <SidebarItem key={item.path} item={item} />
         ))}

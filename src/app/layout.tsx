@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body className="flex">
-        <div className="w-1/5 bg-[#FAFAFA] h-screen p-4 sticky top-0">
+        <div className="w-1/5 bg-[#FAFAFA] h-screen sticky top-0 p-4">
           <Sidebar />
         </div>
         <div className="w-4/5 overflow-y-auto p-4">
